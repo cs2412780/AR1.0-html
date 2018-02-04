@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact Us | Augmented Realms</title>
+	<link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		#map {
+			max-width: 1200px;
+			height: 400px;
+			width: 100%;
+			margin: 0 auto;
+		}
+
+	</style>
+</head>
+<body>	
+	<header class="index-header">
+		<div class="index-container">
+		<nav>
+			<ul class="socialmedias">
+					<a href="https://www.facebook.com/augmentedrealms" class="fa fa-facebook"></a>
+					<a href="https://twitter.com/AugmentedRealms" class="fa fa-twitter"></a>
+					<a href="https://www.instagram.com/augmentedrealms/" class="fa fa-instagram"></a>
+					<a href="mailto:contact@augmentedrealms.io">Email Us</a>
+					<a href="signin.html">Sign In</a>
+			</ul>
+		</nav>
+		</div>
+		<div class="index-container">
+			<a href="index.html"><img src="logo.PNG" alt="Logo"></a>
+			<nav class="index-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="uploader.html">Upload 3D Model</a></li>
+					<li><a href="about-us.html">About Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div>
+	<div id="map"></div>
+	<script type="text/javascript">
+		function initMap() {
+			var uluru = {lat: 34.06, lng: -117.82};
+			var map = new google.maps.Map(document.getElementById('map'),{zoom: 13,
+				center: uluru
+			});
+			var marker = new google.maps.Marker({
+          	position: uluru,
+          	map: map
+        	});
+		}
+	</script>
+	<script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3laLMumOvJwKJawVwA2jWvbhxg64ZH6g&callback=initMap">
+	</script>
+	</div>
+	<div class="index-container">
+		<br>
+		<a href="https://www.google.com/maps/place/Cal+Poly+Pomona/@34.0561425,-117.8219281,17z/data=!4m8!1m2!2m1!1scpp!3m4!1s0x80c32ea5e3dc4361:0x904ae4ed22c91eeb!8m2!3d34.0575651!4d-117.820741"> location: 3801 W Temple Ave, Pomona, CA 91768</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #dce2ed
+}
+
+a{	
+	color: black;
+
+}
+
+a:hover{
+	background-color: #dce2ed;
+}
+
+a:active{
+	background-color: grey;
+}
+
+a:visited{
+	color: black;
+}
+
+.dragon{
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+.index-container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.index-header{
+	background: #ffffff;
+}
+.index-header::after{
+	content: " ";
+	clear: both;
+	display: block;
+	visibility: none;
+}
+.index-nav{
+	float: center;
+}
+
+.index-nav ul li{
+	display: inline-block;
+}
+
+.index-nav ul li a{
+	padding: 16px 30px;
+	text-decoration: none;
+	line-height: 60px;
+}
+.about-us li a{
+	text-decoration: none;
+	font-size: 14;
+}
+
+.index-logo{
+	float: left;
+}
+
+.about-us-article{
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 10px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.socialmedias a{
+	text-decoration: none;
+	padding: 8px; 
+	float: right;
+	margin: 0 auto;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
